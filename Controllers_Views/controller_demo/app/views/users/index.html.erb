@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="col-md-4">
+      <form action="/new" method="post">
+
+        <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+        <div class="form-group">
+          <label for="email">Email address:</label>
+          <input type="email" class="form-control" id="email" name="email">
+        </div>
+
+        <div class="form-group">
+          <label for="Name">Name:</label>
+          <input type="text" class="form-control" id="name" name="name">
+        </div>
+
+        <button type="submit" class="btn btn-default">Submit</button>
+
+      </form>
+    </div>
+</div>
